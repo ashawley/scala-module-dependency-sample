@@ -16,14 +16,14 @@ libraryDependencies := {
     // if Scala 2.12+ is used, use scala-swing 2.x
     case Some((2, scalaMajor)) if scalaMajor >= 12 =>
       libraryDependencies.value ++ Seq(
-        "org.scala-lang.modules" %% "scala-xml" % "1.1.1",
-        "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.1",
-        "org.scala-lang.modules" %% "scala-swing" % "2.0.3")
+        "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
+        "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2",
+        "org.scala-lang.modules" %% "scala-swing" % "2.1.1")
     case Some((2, scalaMajor)) if scalaMajor >= 11 =>
       libraryDependencies.value ++ Seq(
-        "org.scala-lang.modules" %% "scala-xml" % "1.1.1",
-        "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.1",
-        "org.scala-lang.modules" %% "scala-swing" % "1.0.2")
+        "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
+        "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2",
+        "org.scala-lang.modules" %% "scala-swing" % "2.1.1")
     case _ =>
       // or just libraryDependencies.value if you don't depend on scala-swing
       libraryDependencies.value :+ "org.scala-lang" % "scala-swing" % scalaVersion.value
