@@ -12,6 +12,8 @@ script:
  - mvn -Pscala-2.11 exec:java -Dexec.mainClass=XMLHelloWorld
  - mvn -Pscala-2.12 clean compile package
  - mvn -Pscala-2.12 exec:java -Dexec.mainClass=XMLHelloWorld
+ - mvn -Pdotty clean compile package
+ - mvn -Pdotty exec:java -Dexec.mainClass=XMLHelloWorld
 
 cache:
   directories:
